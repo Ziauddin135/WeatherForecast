@@ -7,12 +7,15 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Profile;
 
 import com.innovecture.weatherforecast.service.IWeatherForecastCalculatorService;
 import com.innovecture.weatherforecast.util.WeatherForecastConstants;
 
 @SpringBootApplication
 public class WeatherForecastApplication implements ApplicationRunner {
+
+	private static final int ARG_INDEX = 0;
 
 	private static final Logger logger = LoggerFactory.getLogger(WeatherForecastApplication.class);
 
@@ -26,8 +29,8 @@ public class WeatherForecastApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 
-		Integer zipcode = Integer.parseInt(args.getOptionValues(WeatherForecastConstants.ZIPCODE).get(0));
-		Integer dayOfForecast = Integer.parseInt(args.getOptionValues(WeatherForecastConstants.DAY_OF_FORCAST).get(0));
+		Integer zipcode = Integer.parseInt(args.getOptionValues(WeatherForecastConstants.ZIPCODE).get(ARG_INDEX));
+		Integer dayOfForecast = Integer.parseInt(args.getOptionValues(WeatherForecastConstants.DAY_OF_FORCAST).get(ARG_INDEX));
 		String consoleOutput = weatherForecastCalculatorService.getMinimumForcastForNthDay(zipcode, dayOfForecast);
 		logger.info("output==>" + consoleOutput);
 	}

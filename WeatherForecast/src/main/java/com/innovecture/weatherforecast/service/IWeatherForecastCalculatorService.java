@@ -9,5 +9,5 @@ package com.innovecture.weatherforecast.service;
  */
 public interface IWeatherForecastCalculatorService {
 
-	public String getMinimumForcastForNthDay(Integer zipcode, Integer dayOfForecast);
+	public String getMinimumForcastForNthDay(Integer zipcode, Integer dayOfForecast) throws Exception;
 }
