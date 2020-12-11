@@ -11,6 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.innovecture.weatherforecast.entity.Example;
@@ -36,7 +37,7 @@ public class WeatherForecastCalculatorServiceImplTest {
 	public void getWeatherForcastReport_OkResponse() throws Exception {
 
 		Example example = new Example();
-		example.setCod("200");
+		example.setCod(String.valueOf(HttpStatus.OK.value()));
 		example.setList(new ArrayList());
 		when(iWeatherForecastService.getWeatherForcastReport(26905, 1)).thenReturn(example);
 		String consoleOutput = weatherForecastCalculatorService.getMinimumForcastForNthDay(26905, 1);
@@ -47,7 +48,7 @@ public class WeatherForecastCalculatorServiceImplTest {
 	public void getWeatherForcastReport_ThrowsException() throws Exception {
 
 		Example example = new Example();
-		example.setCod("400");
+		example.setCod(String.valueOf(HttpStatus.BAD_REQUEST.value()));
 		example.setList(new ArrayList());
 		when(iWeatherForecastService.getWeatherForcastReport(26905, 1)).thenReturn(example);
 
