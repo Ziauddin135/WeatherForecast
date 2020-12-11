@@ -12,16 +12,16 @@ Goal is to get Forecast using OpenWeatherAPI and user provided Zipcode for Nth d
 Solution:
 =========
 I have provided solution using following Technology stack:-
--Java
--Spring boot
--Spring MVC
--Spring RESTTemplate
--AES ENCRYPTION DECRYPTION
--MAVEN
--Git
--Github
--STS
--Junit
+- Java
+- Spring boot
+- Spring MVC
+- Spring RESTTemplate
+- AES ENCRYPTION DECRYPTION
+- MAVEN
+- Git
+- Github
+- STS
+- Junit
 
 Application can be deployed as spring boot application providing 2 arguments as:-
 # mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
@@ -49,16 +49,16 @@ We have Utililty classes
 
 Technology Stack:-
 =================
- -Java
- -Spring boot
- -Spring MVC
- -Spring RESTTemplate
- -AES ENCRYPTION DECRYPTION
- -MAVEN
- -Git
- -Github
- -STS
- -Junit
+ - Java
+ - Spring boot
+ - Spring MVC
+ - Spring RESTTemplate
+ - AES ENCRYPTION DECRYPTION
+ - MAVEN
+ - Git
+ - Github
+ - STS
+ - Junit
 
 Build and Run:
 ==============
