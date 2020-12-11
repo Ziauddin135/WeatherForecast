@@ -26,6 +26,10 @@ I have provided solution using following Technology stack:-
 Application can be deployed as spring boot application providing 2 arguments as:-
 # mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
 
+example of the output for provided input argument will be printed in the console as:-
+
+ # output==>YYYY-MM-DD Minimum Temp forcasted is ==> Temperature at 12:0:0 HRS
+
 	Arguments to be passed to the the spring application are --zipcode=29605 --dayOfForcast=2
 	where --zipcode is the zip code of the city whose temperature to be forecast
 	--dayOfForcast is the day from today's date for which temperature needs to be forecast and should be less than 5 days
