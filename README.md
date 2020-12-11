@@ -49,16 +49,16 @@ We have Utililty classes
 
 Technology Stack:-
 =================
--Java
--Spring boot
--Spring MVC
--Spring RESTTemplate
--AES ENCRYPTION DECRYPTION
--MAVEN
--Git
--Github
--STS
--Junit
+ -Java
+ -Spring boot
+ -Spring MVC
+ -Spring RESTTemplate
+ -AES ENCRYPTION DECRYPTION
+ -MAVEN
+ -Git
+ -Github
+ -STS
+ -Junit
 
 Build and Run:
 ==============
