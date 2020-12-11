@@ -11,5 +11,9 @@ public class WeatherForecastConstants {
 	public static final String ZIPCODE = "zipcode";
 	
 	public static final String YYYY_MM_DD_HH_MM_SS = "yyyy-MM-dd HH:mm:ss";
+	
+	public static final String ZIP = "zip";
+
+	public static final String APPID = "appid";
 
 }
