@@ -24,7 +24,7 @@ I have provided solution using following Technology stack:-
 -Junit
 
 Application can be deployed as spring boot application providing 2 arguments as:-
-mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
+# mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
 
 	Arguments to be passed to the the spring application are --zipcode=29605 --dayOfForcast=2
 	where --zipcode is the zip code of the city whose temperature to be forecast
