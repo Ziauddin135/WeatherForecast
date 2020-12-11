@@ -16,6 +16,8 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.innovecture.weatherforecast.entity.Example;
+import com.innovecture.weatherforecast.util.WeatherForcastUtils;
+import com.innovecture.weatherforecast.util.WeatherForecastConstants;
 
 /**
  * @author zia.shaikh
@@ -39,8 +41,9 @@ public class WeatherForecastServiceImpl implements IWeatherForecastService {
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
 
-		UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url).queryParam("appid", apiAccessKey)
-				.queryParam("zip", zipcode);
+		UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)
+				.queryParam(WeatherForecastConstants.APPID, WeatherForcastUtils.decrypt(apiAccessKey))
+				.queryParam(WeatherForecastConstants.ZIP, zipcode);
 
 		HttpEntity<?> entity = new HttpEntity<>(headers);
 
