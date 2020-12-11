@@ -62,8 +62,8 @@ Technology Stack:-
 
 Build and Run:
 ==============
-step 1: mvn clean install
-step 2: mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
+- step 1: mvn clean install
+- step 2: mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
 
 
 Test Cases:
