@@ -23,7 +23,8 @@ I have provided solution using following Technology stack:-
 - STS
 - Junit
 
-Application can be deployed as spring boot application providing 2 arguments as:-
+Application can be deployed as spring boot application providing 2 arguments as:- 
+
 http://localhost:8080/weatherforecast/calculator?zip=29605&day=2
 
 whereas zip is the zipcode of the city for forcast and day is day-from-today for which day of forcast to be calculated
