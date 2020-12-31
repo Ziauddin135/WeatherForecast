@@ -39,7 +39,7 @@ public class WeatherForecastController {
 			return  new ResponseEntity<String>(response, HttpStatus.OK);
 		}catch (Exception e) {
 			
-			throw new WeatherForecastServiceException("Internal Server Exception"); 
+			throw new WeatherForecastServiceException(e.getMessage()); 
 		}
 		
 
