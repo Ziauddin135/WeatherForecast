@@ -32,6 +32,8 @@ whereas zip is the zipcode of the city for forcast and day is day-from-today for
 example of the output for provided input argument will be printed in the console as:-
 
  # output==>YYYY-MM-DD Minimum Temp forcasted is ==> Temperature at 12:0:0 HRS
+ 
+ Temperature forcats will be in Kelvin (*k*)
 
 	Arguments to be passed to the the spring application are --zipcode=29605 --dayOfForcast=2
 	where --zipcode is the zip code of the city whose temperature to be forecast
