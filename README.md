@@ -24,7 +24,9 @@ I have provided solution using following Technology stack:-
 - Junit
 
 Application can be deployed as spring boot application providing 2 arguments as:-
-# mvn spring-boot:run -Dspring-boot.run.arguments="--zipcode=29605 --dayOfForcast=2"
+http://localhost:8080/weatherforecast/calculator?zip=29605&day=2
+
+whereas zip is the zipcode of the city for forcast and day is day-from-today for which day of forcast to be calculated
 
 example of the output for provided input argument will be printed in the console as:-
 
