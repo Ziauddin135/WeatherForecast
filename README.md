@@ -2,7 +2,7 @@
 Problem Statement: 
 ================
 "As a user running the application  
-I can view tomorrow’s predicted temperatures for a given zip-code in the United States
+I can view tomorrow’s predicted temperatures for a given zip-code in the *United States*
 So that I know which will be the coolest hour of the day."
 
 The outputs of this exercise should be a service that gets data from a weather service API and a client interface (could be CLI).  You can use any java framework of your choice.  
